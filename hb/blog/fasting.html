@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Blog Template</title>
+    <meta name="author" content="David Grzyb" />
+    <meta name="description" content="" />
+    <meta property="og:image" content="https://www.healthbay.net/hb/img/fastingwoman.png">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <script async>!function(t,n,y,to,o,l,s){(o=t.tny=t.tny||function(){(o.q=o.q||[]).push(arguments)}).l=+new Date;o.v="0.1";(l=n.createElement(y)).async=1;l.src=to;(s=n.getElementsByTagName(y)[0]).parentNode.insertBefore(l,s)}(window,document,"script","https://staging.tny.to/load/tny.js");tny("list","7PSHzZ2NsH")</script>
+
+
+    <!-- Tailwind -->
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+   
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TN36W25');</script>
+  <!-- End Google Tag Manager -->
+
+    <!-- AlpineJS -->
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+      integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-white ">
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN36W25"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
+     <!-- HEADER -->
+     <div class="mb-4 sm:mb-16">
+      <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<div class="w-full text-blue-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-300">
+  <div x-data="{ open: false }" class="flex flex-col px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-4 lg:px-4">
+    <div class="flex flex-row items-center justify-between">
+      <a href="https://healthbay.net" class="flex flex-row items-center w-1/3 text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg sm:w-3/5 sm:items-start dark-mode:text-white focus:outline-none focus:shadow-outline"><img class="pb-1 " src="/hb/img/healthbayhplogo.png"/></a>
+      <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/hb/blog">Blog</a>
+      <!-- <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Supplements</a>
+      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Reviews</a>
+      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/hb/getintouch.html">Get In Touch</a>
+      <div @click.away="open = false" class="relative" x-data="{ open: false }">
+        <button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+          <span>Categories</span>
+          <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </button>
+        <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+          <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
+            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Diabetes</a>
+            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Tinnitus</a>
+            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Eye Health</a>
+            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Hair & Skin</a>
+            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Nail Fungus</a> -->
+
+          </div>
+        </div>
+      </div>    
+    </nav>
+  </div>
+</div>
+</div>
+
+    <nav class="flex justify-center" aria-label="Breadcrumb">
+      <ol class="flex items-center space-x-4">
+        <li>
+          <div>
+            <a href="https://healthbay.net" class="text-gray-400 hover:text-gray-500">
+              <!-- Heroicon name: solid/home -->
+              <svg class="flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+              </svg>
+              <span class="sr-only">Home</span>
+            </a>
+          </div>
+        </li>
+    
+        <li>
+          <div class="flex items-center">
+            <!-- Heroicon name: solid/chevron-right -->
+            <svg class="flex-shrink-0 w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg>
+            <a href="/hb/blog/index.html" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">Blog</a>
+          </div>
+        </li>
+    
+        <!-- <li>
+          <div class="flex items-center">
+            
+            <svg class="flex-shrink-0 w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg>
+            <a href="/hb/blog/post/fasting.html" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700" aria-current="page">Fasting</a>
+          </div>
+        </li> -->
+      </ol>
+    </nav>
+
+    <!-- Text Header -->
+    <header class="container w-full mx-auto">
+      <div class="flex flex-col items-center pt-5 pb-12">
+        <a
+          class="text-5xl font-bold text-gray-800 uppercase hover:text-gray-700"
+          href="/hb/blog/index.html"
+        >
+          Healthbay Blog
+        </a>
+        <p class="text-lg text-gray-600">“Your body deserves the best.”</p>
+      </div>
+    </header>
+
+    <div class="container flex flex-wrap py-6 mx-auto">
+      <!-- Post Section -->
+      <section class="flex flex-col items-center w-full px-3 md:w-2/3">
+        <article class="flex flex-col my-4 shadow">
+          <!-- Article Image -->
+            <img class="hover:opacity-75"
+              src="/hb/img/fastingwoman.png"
+            />
+          <div class="flex flex-col justify-start p-6 bg-white">
+            <a href="#" class="pb-4 text-sm font-bold text-blue-700 uppercase"
+              >General Health</a
+            >
+            <a  class="pb-4 text-3xl font-bold hover:text-gray-700"
+              >Why Is Fasting Good For The Body?</a
+            >
+            <p href="#" class="pb-8 text-sm">
+              By
+              <a  class="font-semibold hover:text-gray-800"
+                >Angelina Soares</a
+              >, Published on April 25th, 2021
+            </p>
+            <h1 class="pb-3 text-2xl font-bold"></h1>
+            <p class="pb-3 text-xl leading-relaxed">
+              Fasting is very much in vogue at the moment – according to a recent survey, one in five Americans would like to try out fasting:<br>
+
+              All the same, whether the welfare chamfering after Buchinger,
+               with which equal several days at the piece are chamfered,
+                or the up-to-date popular concept of the interval chamfering,
+                 with which only by the hour food is renounced. Fasting has many positive effects. <br>
+                 Due to the lack of energy supply, the body has to rotate its metabolism by 180 degrees.
+                  It sends out many metabolic hormones and altered messenger substances so that the body can
+                   cope with this change. Exactly that brings the health-promoting effects with itself.<br>
+                    Blood pressure levels drop, sugar metabolism improves and many people report that they
+                     feel generally fitter and healthier. A special effect on health is the so-called autophagy.
+                      This is the body’s own cell cleansing, which is triggered by the lack of calorie intake
+                       during fasting after about 12 to 16 hours. During this process, old and damaged cell 
+                       components are broken down and used for energy production. The cells thus remain healthy and young.<br>
+                        The process of autophagy therefore plays an increasingly important role in the prevention of age-related diseases such as dementia and cardiovascular diseases.
+            </p>
+            <h1 class="pb-3 font-bold"></h1>
+            <p class="pb-3 text-xl leading-relaxed">
+              However, fasting is not suitable for everyone.<br> Some people are not allowed
+               to fast because of previous illnesses. Especially older people should therefore 
+               only fast under medical supervision. But even for those who are allowed to fast,
+                it is often difficult to implement a fasting method in everyday life on a long-term basis.<br>
+                 However, researchers have discovered the natural, endogenous substance spermidine, 
+                 which is contained in high concentrations in wheat germs, for example.<br> Spermidine activates
+                  the body’s own autophagy and thus imitates parts of the effect of fasting. For this reason,
+                   the food supplement is also suitable as an “extra boost” during fasting or as a partial
+                    supplement if fasting cannot be carried out continuously. These spermidine capsules based on wheat germ extract are now also available in your pharmacy.<br> They have already been used as a study medication in a study conducted by the Charité Berlin and the results were indeed promising:<br> after only 3 months of taking them, the participants’ memory performance was measurably improved. However, fasting is not suitable for everyone. Some people are not allowed to fast because of previous illnesses. Especially older people should therefore only fast under medical supervision.<br> But even for those who are allowed to fast, it is often difficult to implement a fasting method in everyday life on a long-term basis. However, researchers have discovered the natural, endogenous substance spermidine, which is contained in high concentrations in wheat germs, for example. Spermidine activates the body’s own autophagy and thus imitates parts of the effect of fasting.
+
+            </p>
+            <p class="pb-3">
+              
+            </p>
+            <p class="pb-3">
+              
+            </p>
+            <h1 class="pb-3 text-2xl font-bold"></h1>
+            <p class="pb-3">
+              
+            </p>
+          </div>
+        </article>
+
+        <div class="flex w-full pt-6">
+          <a
+            href="sciatica-pain.html"
+            class="w-1/2 p-6 text-left bg-white shadow hover:shadow-md"
+          >
+            <p class="flex items-center text-lg font-bold text-blue-800">
+              <i class="pr-1 fas fa-arrow-left"></i> Previous Post
+            </p>
+            <p class="pt-2"><!--Previous Post Name--></p>
+          </a>
+          <a
+            href="smoothie-diet.html"
+            class="w-1/2 p-6 text-right bg-white shadow hover:shadow-md"
+          >
+            <p
+              class="flex items-center justify-end text-lg font-bold text-blue-800 "
+            >
+              Next Post <i class="pl-1 fas fa-arrow-right"></i>
+            </p>
+            <p class="pt-2"><!--Previous Post Name--></p>
+          </a>
+        </div>
+
+    
+      </section>
+
+      <!-- Sidebar Section -->
+      <aside class="flex flex-col items-center w-full px-3 md:w-1/3">
+        <div class="flex flex-col w-full p-6 my-4 bg-white shadow">
+          <p class="pb-5 text-xl font-semibold">GIVEAWAY! 🎁😍 </p>
+          <p class="pb-2">
+            For a limited time you can get FREE FitFreeze - the delicious chocolate dessert that destroys fat cells instantly!!
+          </p>
+          <a
+            href="https://mwadmire.com/6543/398/2/?" target="_blank"
+            class="flex items-center justify-center w-full px-2 py-3 mt-4 text-sm font-bold text-white uppercase bg-blue-800 rounded hover:bg-blue-700"
+          >
+            Get FREE FitFreeze
+          </a>
+        </div>
+        <div class="flex flex-col p-6 my-4 bg-white shadow">
+          <p class="pb-5 text-xl font-semibold">Instagram</p>
+          <div class="grid object-contain grid-cols-3 gap-3">
+            <img
+              class="hover:opacity-75"
+              src="/hb/img/instapics/1.png"
+            />
+            <img
+              class="hover:opacity-75"
+              src="/hb/img/instapics/2.png"
+            />
+            <img
+              class="hover:opacity-75"
+              src="/hb/img/instapics/3.png"
+            />
+            <img
+              class="hover:opacity-75"
+              src="/hb/img/instapics/4.png"
+            />
+            <img
+              class="hover:opacity-75"
+              src="/hb/img/instapics/5.png"
+            />
+            <img
+              class="hover:opacity-75"
+              src="/hb/img/instapics/6.png"
+            />
+            <img
+              class="hover:opacity-75"
+              src="/hb/img/instapics/7.png"
+            />
+            <img
+              class="hover:opacity-75"
+              src="/hb/img/instapics/8.png"
+            />
+            <img
+              class="hover:opacity-75"
+              src="/hb/img/instapics/9.png"
+            />
+          </div>
+          <a
+            href="https://www.instagram.com/healthbayy"
+            class="flex items-center justify-center w-full px-2 py-3 mt-6 text-sm font-bold text-white uppercase bg-blue-800 rounded hover:bg-blue-700"
+          >
+            <i class="mr-2 fab fa-instagram"></i> Follow @healthbayy
+          </a>
+        </div>
+      </aside>
+    </div>
+
+    <div class="flex justify-center mt-10 mb-10">
+      <a class="mx-20 " href="http://drbal.1keto.hop.clickbank.net/" target="_blank">
+        <img src="https://customketodiet.com/uploads/banners/en/keto-diet-fb-banner-2.jpg" width="500" height="500" alt="Custom Keto Diet">
+        </a>
+
+        <a class="mx-20" href="http://drbal.1keto.hop.clickbank.net/" target="_blank">
+          <img src="https://customketodiet.com/uploads/banners/en/keto-diet-fb-banner-5.jpg" width="500" height="500" alt="Custom Keto Diet">
+          </a>
+          
+        
+    </div>
+
+    <!-- <div class="relative mx-4 mt-20 rounded-lg">
+      <div class="absolute left-0 right-0 h-1/2 bg-warm-gray-50" aria-hidden="true"></div>
+      <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+        <div class="px-6 py-10 bg-gradient-to-r to-green-500 from-blue-700 bg-gradient-to-l from-light-blue-800 to-cyan-700 rounded-3xl sm:py-16 sm:px-12 lg:py-20 lg:px-20 lg:flex lg:items-center">
+          <div class="lg:w-0 lg:flex-1">
+            <h2 class="text-3xl font-extrabold tracking-tight text-black">
+              Sign up for our newsletter
+            </h2>
+            <p class="max-w-3xl mt-4 text-lg text-cyan-100">
+              Don't miss out on exclusive content and brand new scientific discoveries! Just join the over 16,482 members of the Healthbay email list.
+            </p>
+          </div>
+          <div class="mt-12 sm:w-full sm:max-w-md lg:mt-0 lg:ml-8 lg:flex-1">
+            <form class="sm:flex">
+              <label for="emailAddress" class="sr-only">Email address</label>
+              <input id="emailAddress" name="emailAddress" type="email" autocomplete="email" required class="w-full px-5 py-3 border-black rounded-md placeholder-warm-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-cyan-700 focus:ring-blue-500" placeholder="Enter your email">
+              <button type="submit" class="flex items-center justify-center w-full px-5 py-3 mt-3 text-base font-medium text-white bg-green-400 border border-transparent rounded-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-cyan-700 focus:ring-green-400 sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0">
+                Notify me
+              </button>
+            </form>
+            <p class="mt-3 text-sm text-cyan-100">
+              We care about the protection of your data. Read our
+              <a href="#" class="font-medium text-white underline">
+                Privacy Policy.
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </body>
+
+          
+            
+            
+        
+
+    <footer class="pt-20 bg-gray-100" aria-labelledby="footerHeading">
+        <h2 id="footerHeading" class="sr-only">Footer</h2>
+
+        <div>
+              
+            <p class="mb-5 text-base text-center text-gray-500">
+                “Your body deserves the best.”
+              </p>
+
+              <div class="flex justify-center mb-3 opacity-50">
+      
+                <a class="w-6 mx-2 hover:opacity-75" target="_blank" href="https://www.facebook.com/healthbayy"><img src="/public/img/facebook.png"></a> 
+                <a class="w-6 mx-2 hover:opacity-75" target="_blank" href="https://www.pinterest.com/healthbayy"><img src="/public/img/pinterest.png"></a>
+                <a class="w-6 mx-2 hover:opacity-75" target="_blank" href="https://www.instagram.com/healthbayy"><img src="/public/img/insta.png"></a>
+              </div>
+        </div>
+
+        
+        <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
+          <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+            <div class="space-y-8 xl:col-span-1">
+            
+            
+
+            
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-8 mt-12 text-center xl:mt-0 xl:col-span-2">
+              <div class="md:grid md:grid-cols-2 md:gap-8">
+                <div>
+                  <h3 class="text-sm font-semibold tracking-wider text-gray-400 uppercase">
+                    Categories
+                  </h3>
+                  <ul class="mt-4 space-y-4">
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        Diabetes
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        Tinnitus
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        Eye Health
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        Hair & Skin
+                      </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                          Nail Fungus
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+                <div class="mt-12 md:mt-0">
+                  <h3 class="text-sm font-semibold tracking-wider text-gray-400 uppercase">
+                    Supplements
+                  </h3>
+                  <ul class="mt-4 space-y-4">
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        Brain Supplements
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        Fat Loss
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        Erectyle Disfunction
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="md:grid md:grid-cols-2 md:gap-8">
+                <div>
+                  <h3 class="text-sm font-semibold tracking-wider text-gray-400 uppercase">
+                    Reviews
+                  </h3>
+                  <ul class="mt-4 space-y-4">
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        Best Diet Products
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        Top 3 Mental Health 
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mt-12 md:mt-0">
+                  <h3 class="text-sm font-semibold tracking-wider text-gray-400 uppercase">
+                    Legal
+                  </h3>
+                  <ul class="mt-4 space-y-4">
+                    <li>
+                      <a href="/public/footer/disclaimer.html" class="text-base text-gray-500 hover:text-gray-900">
+                        Disclaimer
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="/public/footer/privacy-policy.html" class="text-base text-gray-500 hover:text-gray-900">
+                        Privacy
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="/public/footer/terms-of-service.html" class="text-base text-gray-500 hover:text-gray-900">
+                        Terms
+                      </a>
+                    </li>
+
+                    <li>
+                        <a href="/public/footer/contact.html" class="text-base text-gray-500 hover:text-gray-900">
+                          Contact
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pt-8 text-center border-t border-gray-200">
+            <p class="text-base text-gray-400 xl:text-center">
+              &copy; 2021 healthbay, Inc. All rights reserved.<br>
+            </p>
+            <p class="text-center text-gray-400 ">Logo made by <a href="https://www.designevo.com/" title="Free Online Logo Maker">DesignEvo free logo creator</a></p>
+
+          </div>
+        </div>
+    </footer>
+      </footer>
+</html>
+

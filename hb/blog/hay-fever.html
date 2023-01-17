@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>healthbay | How Proper Nutrition Can Relieve Hay Fever</title>
+    <meta name="author" content="David Grzyb" />
+    <meta name="description" content="" />
+    <meta property="og:image" content="https://www.healthbay.net/hb/img/hayfever.png">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <script async>!function(t,n,y,to,o,l,s){(o=t.tny=t.tny||function(){(o.q=o.q||[]).push(arguments)}).l=+new Date;o.v="0.1";(l=n.createElement(y)).async=1;l.src=to;(s=n.getElementsByTagName(y)[0]).parentNode.insertBefore(l,s)}(window,document,"script","https://staging.tny.to/load/tny.js");tny("list","7PSHzZ2NsH")</script>
+
+
+    <!-- Tailwind -->
+    <link
+    href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+   
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TN36W25');</script>
+  <!-- End Google Tag Manager -->
+
+    <!-- AlpineJS -->
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+      integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-white ">
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN36W25"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
+     <!-- HEADER -->
+     <div class="mb-4 sm:mb-16">
+      <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<div class="w-full text-blue-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-300">
+  <div x-data="{ open: false }" class="flex flex-col px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-4 lg:px-4">
+    <div class="flex flex-row items-center justify-between">
+      <a href="https://healthbay.net" class="flex flex-row items-center w-1/3 text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg sm:w-3/5 sm:items-start dark-mode:text-white focus:outline-none focus:shadow-outline"><img class="pb-1 " src="/hb/img/healthbayhplogo.png"/></a>
+      <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/hb/blog">Blog</a>
+      <!-- <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Supplements</a>
+      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Reviews</a>
+      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/hb/getintouch.html">Get In Touch</a>
+      <div @click.away="open = false" class="relative" x-data="{ open: false }">
+        <button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+          <span>Categories</span>
+          <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </button>
+        <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+          <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
+            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Diabetes</a>
+            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Tinnitus</a>
+            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Eye Health</a>
+            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Hair & Skin</a>
+            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Nail Fungus</a> -->
+
+          </div>
+        </div>
+      </div>    
+    </nav>
+  </div>
+</div>
+</div>
+    <nav class="flex justify-center" aria-label="Breadcrumb">
+      <ol class="flex items-center space-x-4">
+        <li>
+          <div>
+            <a href="https://healthbay.net" class="text-gray-400 hover:text-gray-500">
+              <!-- Heroicon name: solid/home -->
+              <svg class="flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+              </svg>
+              <span class="sr-only">Home</span>
+            </a>
+          </div>
+        </li>
+    
+        <li>
+          <div class="flex items-center">
+            <!-- Heroicon name: solid/chevron-right -->
+            <svg class="flex-shrink-0 w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg>
+            <a href="/hb/blog/index.html" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">Blog</a>
+          </div>
+        </li>
+    
+        <!-- <li>
+          <div class="flex items-center">
+            
+            <svg class="flex-shrink-0 w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg>
+            <a href="/hb/blog/post/fasting.html" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700" aria-current="page">Symptoms Of Prostate Enlargement</a>
+          </div>
+        </li> -->
+      </ol>
+    </nav>
+
+    <!-- Text Header -->
+    <header class="container w-full mx-auto">
+      <div class="flex flex-col items-center pt-5 pb-12">
+        <a
+          class="text-5xl font-bold text-gray-800 uppercase hover:text-gray-700"
+          href="/hb/blog/index.html"
+        >
+          Healthbay Blog
+        </a>
+        <p class="text-lg text-gray-600">“Your body deserves the best.”</p>
+      </div>
+    </header>
+
+    <div class="container flex flex-wrap py-6 mx-auto">
+      <!-- Post Section -->
+      <section class="flex flex-col items-center w-full px-3 md:w-2/3">
+        <article class="flex flex-col my-4 shadow">
+          <!-- Article Image -->
+            <img class="hover:opacity-75"
+              src="/hb/img/hayfever.png"
+            />
+          <div class="flex flex-col justify-start p-6 bg-white">
+            <a class="pb-4 text-sm font-bold text-blue-700 uppercase"
+              >Allergies</a
+            >
+            <a class="pb-4 text-3xl font-bold hover:text-gray-700"
+              >How Proper Nutrition Can Relieve Hay Fever
+              </a
+            >
+            <p class="pb-8 text-sm">
+              By
+              <a class="font-semibold hover:text-gray-800"
+                >Frank Carlson</a
+              >, Published on June 3th, 2021
+            </p>
+            
+            <p class="pb-3">
+              For a lot of people the arrival of spring is also the beginning of the hay fever season.
+               Pollen flies in the air and causes allergic reactions.
+               <br> Clear signs of this are itchy eyes and an itchy nose, a frequent sneezing irritation or sniffles.
+                It is important for pollen allergy sufferers to pay attention to their diet at this time, as this can make the symptoms worse – but also alleviate them.</p>
+   
+                <h1 class="pt-3 pb-3 text-2xl font-bold">Cross Allergies With Food</h1>
+            <p class="pb-3">
+              People who suffer from hay fever often cannot tolerate certain foods. The reason for this are so-called cross-allergies. These arise because the allergy-causing proteins (allergens) of pollen and food are similar in structure.
+              Pollen allergy sufferers should therefore be particularly careful with certain foods. However, if these are well tolerated, regular consume helps to maintain the tolerance to the allergens.
+              
+              The following cross-allergies occur particularly frequently:
+
+              <ul class="pb-3 list-disc list-inside">
+                <li>
+                  Grass pollen: Cereal products and legumes (such as soya and peanuts)
+                </li>
+                <li>
+                  Birch pollen: stone and pome fruits (such as apples, plums and cherries), nuts and soya                </li>
+                <li>
+                  Herbal pollen, especially mugwort: carrots, celery, chamomile, paprika, tomatoes, artichokes, cucumbers, garlic and various spices </li>
+              </ul>
+
+            <h1 class="pb-3 text-2xl font-semibold">Low Histamine Diet
+            </h1>
+            
+            <p class="pb-3">
+              Hay fever is an overreaction of the immune system against the proteins contained in pollen. As a reaction, the body releases histamine, which ultimately triggers the symptoms.
+              Therefore, a diet low in histamine is recommended, which does not additionally increase the content of the messenger substance in the body.<br> <br>
+              For example, yeasty finished products, ripe cheese, vinegar, wheat products, pulses, tomatoes, chocolate, preserved seafood and smoked meat should only be eaten in moderation.</p>
+        
+            <h1 class="pt-3 pb-3 text-2xl font-bold">Vitamins And Minerals Against Hay Fever</h1>
+            <p class="pb-3">
+              There are some vitamins and minerals that are able to relieve the symptoms.They not only stabilise the mucous membranes, but also prevent the release of histamine into the bloodstream, bind excess histamine in the body or promote its breakdown.
+              Important substances in the diet to relieve hay fever are: <br> </p>
+
+              <ul class="pb-3 list-disc list-inside">
+                <li class="pb-3">
+                  Magnesium (for example in wheat bran, sunflower seeds and walnuts)</li>
+                  <li class="pb-3">
+                  Vitamin B6 (for example in oat flakes and wholemeal rice) 
+                </li>            
+                <li class="pb-3">
+                    Vitamin C (for example in peppers, oranges and cabbage)
+                  </li>
+                  <li class="pb-3">
+                    Calcium (for example in yoghurt, camembert and soya) </li> 
+                    <li class="pb-3">
+                    Zinc (for example in oysters, beef, lentils and wholemeal bread) </li> 
+                    <li class="pb-3">
+                    Selenium (for example in sesame, Brazil nuts and coconut)</li> 
+                    <li class="pb-3">
+                      Manganese (for example in oat flakes, wheat bran, rice and hazelnuts)
+                    </li>
+              </ul>           
+
+            <h1 class="pt-10 pb-3 text-2xl font-bold">Nutrition Tips</h1>
+            <p class="pt-3 pb-3">
+              In general, a vitamin-rich, fresh, and varied diet is recommended. Sugar, fish, meat, eggs, and milk should only be consumed in small amounts.
+              The following foods are ideal for relieving hay fever:</p>
+            <img class="max-w-sm" src="/hb/img/blogpics/freshfruit.png">
+              
+            <ul class="pb-3 list-disc list-inside">
+              <li class="pt-3 pb-3">
+                Fresh fruit
+              </li>
+              <li class="pb-3">
+                Broccoli and broccoli sprouts 
+              </li>            
+              <li class="pb-3">
+                Green leafy vegetables like kale, spinach, and chard
+                </li>
+                <li class="pb-3">
+                  Elderberries, sea buckthorn, blackcurrants, and acerola cherries</li> 
+                  <li class="pb-3">
+                    Sunflower seeds, sesame, and linseed</li> 
+                  <li class="pb-3">
+                    Parsley and thyme</li> 
+                  <li class="pb-3">
+                    Onions and apples
+                  </li>
+            </ul> 
+          
+          </div>
+        </article>
+
+        <div class="flex w-full pt-6">
+          <a
+            href="/hb/blog/headaches.html"
+            class="w-1/2 p-6 text-left bg-white shadow hover:shadow-md"
+          >
+            <p class="flex items-center text-lg font-bold text-blue-800">
+              <i class="pr-1 fas fa-arrow-left"></i> Previous Post
+            </p>
+            <p class="pt-2"><!--Previous Post Name--></p>
+          </a>
+          <a
+            href="/hb/blog/fasting.html"
+            class="w-1/2 p-6 text-right bg-white shadow hover:shadow-md"
+          >
+            <p
+              class="flex items-center justify-end text-lg font-bold text-blue-800 "
+            >
+              Next Post <i class="pl-1 fas fa-arrow-right"></i>
+            </p>
+            <p class="pt-2"><!--Previous Post Name--></p>
+          </a>
+        </div>
+
+    
+      </section>
+
+      <!-- Sidebar Section -->
+      <aside class="flex flex-col items-center w-full px-3 md:w-1/3">
+        <div class="flex flex-col w-full p-6 my-4 bg-white shadow">
+          <p class="pb-5 text-xl font-semibold">63% SALE on Emily Lark's "Back To Life" 🎁😍 </p>
+          <p class="pb-2">
+            For a limited time, you can get the described program "Back To Life" by Emily Lark for this discounted price.<br>
+            Read the article to get more information.          </p>
+          <a
+            href="https://mwadmire.com/5721/1747/6/?" target="_blank"
+            class="flex items-center justify-center w-full px-2 py-3 mt-4 text-sm font-bold text-white uppercase bg-blue-800 rounded hover:bg-blue-700"
+          >
+            Learn More
+          </a>
+        </div>
+        <div class="flex flex-col p-6 my-4 bg-white shadow">
+          <p class="pb-5 text-xl font-semibold">Instagram</p>
+          <div class="grid object-contain grid-cols-3 gap-3">
+            <img
+              class="hover:opacity-75"
+              src="/hb/img/instapics/1.png"
+            />
+            <img
+              class="hover:opacity-75"
+              src="/hb/img/instapics/2.png"
+            />
+            <img
+              class="hover:opacity-75"
+              src="/hb/img/instapics/3.png"
+            />
+            <img
+              class="hover:opacity-75"
+              src="/hb/img/instapics/4.png"
+            />
+            <img
+              class="hover:opacity-75"
+              src="/hb/img/instapics/5.png"
+            />
+            <img
+              class="hover:opacity-75"
+              src="/hb/img/instapics/6.png"
+            />
+            <img
+              class="hover:opacity-75"
+              src="/hb/img/instapics/7.png"
+            />
+            <img
+              class="hover:opacity-75"
+              src="/hb/img/instapics/8.png"
+            />
+            <img
+              class="hover:opacity-75"
+              src="/hb/img/instapics/9.png"
+            />
+          </div>
+          <a
+            href="https://www.instagram.com/healthbayy"
+            class="flex items-center justify-center w-full px-2 py-3 mt-6 text-sm font-bold text-white uppercase bg-blue-800 rounded hover:bg-blue-700"
+          >
+            <i class="mr-2 fab fa-instagram"></i> Follow @healthbayy
+          </a>
+        </div>
+      </aside>
+    </div>
+
+
+    <!-- <div class="relative mx-4 mt-20 rounded-lg">
+      <div class="absolute left-0 right-0 h-1/2 bg-warm-gray-50" aria-hidden="true"></div>
+      <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+        <div class="px-6 py-10 bg-gradient-to-r to-green-500 from-blue-700 bg-gradient-to-l from-light-blue-800 to-cyan-700 rounded-3xl sm:py-16 sm:px-12 lg:py-20 lg:px-20 lg:flex lg:items-center">
+          <div class="lg:w-0 lg:flex-1">
+            <h2 class="text-3xl font-extrabold tracking-tight text-black">
+              Sign up for our newsletter
+            </h2>
+            <p class="max-w-3xl mt-4 text-lg text-cyan-100">
+              Don't miss out on exclusive content and brand new scientific discoveries! Just join the over 16,482 members of the Healthbay email list.
+            </p>
+          </div>
+          <div class="mt-12 sm:w-full sm:max-w-md lg:mt-0 lg:ml-8 lg:flex-1">
+            <form class="sm:flex">
+              <label for="emailAddress" class="sr-only">Email address</label>
+              <input id="emailAddress" name="emailAddress" type="email" autocomplete="email" required class="w-full px-5 py-3 border-black rounded-md placeholder-warm-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-cyan-700 focus:ring-blue-500" placeholder="Enter your email">
+              <button type="submit" class="flex items-center justify-center w-full px-5 py-3 mt-3 text-base font-medium text-white bg-green-400 border border-transparent rounded-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-cyan-700 focus:ring-green-400 sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0">
+                Notify me
+              </button>
+            </form>
+            <p class="mt-3 text-sm text-cyan-100">
+              We care about the protection of your data. Read our
+              <a href="#" class="font-medium text-white underline">
+                Privacy Policy.
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </body>
+
+          
+            
+            
+        
+
+    <footer class="pt-20 bg-gray-100" aria-labelledby="footerHeading">
+        <h2 id="footerHeading" class="sr-only">Footer</h2>
+
+        <div>
+              
+            <p class="mb-5 text-base text-center text-gray-500">
+                “Your body deserves the best.”
+              </p>
+
+              <div class="flex justify-center mb-3 opacity-50">
+      
+                <a class="w-6 mx-2 hover:opacity-75" target="_blank" href="https://www.facebook.com/healthbayy"><img src="/public/img/facebook.png"></a> 
+                <a class="w-6 mx-2 hover:opacity-75" target="_blank" href="https://www.pinterest.com/healthbayy"><img src="/public/img/pinterest.png"></a>
+                <a class="w-6 mx-2 hover:opacity-75" target="_blank" href="https://www.instagram.com/healthbayy"><img src="/public/img/insta.png"></a>
+              </div>
+        </div>
+
+        
+        <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
+          <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+            <div class="space-y-8 xl:col-span-1">
+            
+            
+
+            
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-8 mt-12 text-center xl:mt-0 xl:col-span-2">
+              <div class="md:grid md:grid-cols-2 md:gap-8">
+                <div>
+                  <h3 class="text-sm font-semibold tracking-wider text-gray-400 uppercase">
+                    Categories
+                  </h3>
+                  <ul class="mt-4 space-y-4">
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        Diabetes
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        Tinnitus
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        Eye Health
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        Hair & Skin
+                      </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                          Nail Fungus
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+                <div class="mt-12 md:mt-0">
+                  <h3 class="text-sm font-semibold tracking-wider text-gray-400 uppercase">
+                    Supplements
+                  </h3>
+                  <ul class="mt-4 space-y-4">
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        Brain Supplements
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        Fat Loss
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        Erectyle Disfunction
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="md:grid md:grid-cols-2 md:gap-8">
+                <div>
+                  <h3 class="text-sm font-semibold tracking-wider text-gray-400 uppercase">
+                    Reviews
+                  </h3>
+                  <ul class="mt-4 space-y-4">
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        Best Diet Products
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        Top 3 Mental Health 
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                        
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mt-12 md:mt-0">
+                  <h3 class="text-sm font-semibold tracking-wider text-gray-400 uppercase">
+                    Legal
+                  </h3>
+                  <ul class="mt-4 space-y-4">
+                    <li>
+                      <a href="/public/footer/disclaimer.html" class="text-base text-gray-500 hover:text-gray-900">
+                        Disclaimer
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="/public/footer/privacy-policy.html" class="text-base text-gray-500 hover:text-gray-900">
+                        Privacy
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="/public/footer/terms-of-service.html" class="text-base text-gray-500 hover:text-gray-900">
+                        Terms
+                      </a>
+                    </li>
+
+                    <li>
+                        <a href="/public/footer/contact.html" class="text-base text-gray-500 hover:text-gray-900">
+                          Contact
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pt-8 text-center border-t border-gray-200">
+            <p class="text-base text-gray-400 xl:text-center">
+              &copy; 2021 healthbay, Inc. All rights reserved.<br>
+            </p>
+            <p class="text-center text-gray-400 ">Logo made by <a href="https://www.designevo.com/" title="Free Online Logo Maker">DesignEvo free logo creator</a></p>
+
+          </div>
+        </div>
+    </footer>
+      </footer>
+</html>
+
